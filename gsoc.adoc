@@ -1,0 +1,94 @@
+= GSoC: Improve Uyuni Documentation Publishing Theme
+:toc:
+
+
+
+== Project Title
+Improve Uyuni Documentation Publishing Theme
+
+
+
+=== Description
+Use our existing Antora theme and learn our publishing process for Uyuni documentation.
+Then with input from our team, design a modern, classy theme that meets Uyuni documentation standards.
+
+
+
+=== Deliverable and Expectations
+You will help design and update the frontend for our Uyuni documentation.
+Several of the following items may be reviewed and customized.
+
+- Asciidoctor document block styles (Admonitions, paragraphs, tables, positioning, literals, code blocks etc)
+- UI organization and styles (navbar, footer and header)
+- Quality of life improvements using javascript (navbar, google analytics,  )
+
+
+
+=== Mentor
+Joseph Cayouette
+
+Contact: jcayouette.suse@gmail.com
+
+
+
+=== Skills
+Native or fluent English, You will need to have a good understanding of Linux, and be comfortable with version control using git and github. You will be working with Asciidoc, so learning the basics of this markdown style will be useful. Antora utilizes the Asciidoctor API to publish static HTML pages from asciidoc sources.
+
+- Javascript (Required)
+- HTML (Required)
+- CSS (Required)
+- Asciidoc (Basic)
+- YAML (Helpful)
+- Handlebars Templating (Helpful)
+- Skill Level Medium
+
+
+
+== Getting started
+
+The following information will help you get started.
+
+I have setup a repository that we can collaborate from on Gitlab.
+This repository contains the default UI for antora.
+
+- https://gitlab.com/galaxy-docs/antora-ui-default
+
+See the development quickstart section on getting your dev environment up and running:
+
+- https://gitlab.com/galaxy-docs/antora-ui-default#user-content-development-quickstart
+
+
+
+== Workflow
+
+=== Working with the Default UI
+. We will not need to do much to the default UI. (We only need adjust basic items here.)
+. I use nvm to manage my node versions. Once you have nvm installed run `nvm install 10`
+. You can switch to this version of Node.js at any time using the following command: `nvm use 10`
+. To preview your changes run `gulp preview`. This sets up a local server so you can preview your changes in real time in your browser.
+
+=== Working with Supplemental Files
+
+We keep our custom changes to the default ui in our uyuni-docs repo.
+These are located in: https://github.com/uyuni-project/uyuni-docs/tree/master/branding/supplemental-ui/uyuni/uyuni-webui
+
+There are a few ways of working with the supplemental files:
+
+. Build the uyuni-docs site after making your changes, then hit f5 in the Chrome to update `make antora-uyuni`
+. You can serve the content from the uyuni-docs/build folder.
+I use `ruby -run -e httpd . -p 5000`
+
+
+
+== Additional Resources
+
+Use the following resources to help you get a firm grasp on our doc stack.
+
+- https://antora.org/
+- https://asciidoctor.org/
+- https://asciidoctor.github.io/asciidoctor.js/master/
+- https://asciidoctor-docs.netlify.com/asciidoctor.js/
+- https://github.com/uyuni-project/uyuni-docs
+- https://handlebarsjs.com/
+- https://gitter.im/antora/users
+- https://github.com/uyuni-project/uyuni-docs/wiki#setup-and-build-manual-method

@@ -48,14 +48,40 @@ Native or fluent English, You will need to have a good understanding of Linux, a
 
 The following information will help you get started.
 
-I have setup a repository that we can collaborate from on Gitlab.
-This repository contains the default UI for antora.
+I have setup a branch in our uyuni-docs repository that we can collaborate from on Gitlab.
+This repository contains the supplemental overrides for the default-ui for antora.
 
-- https://gitlab.com/galaxy-docs/antora-ui-default
+- https://github.com/uyuni-project/uyuni-docs/tree/gsoc-uyuni-theme
 
-See the development quickstart section on getting your dev environment up and running:
+. Clone the repository:
++
 
-- https://gitlab.com/galaxy-docs/antora-ui-default#user-content-development-quickstart
+----
+git clone https://github.com/uyuni-project/uyuni-docs.git
+----
++
+
+. Checkout the **gsoc-uyuni-theme** branch:
++
+
+----
+git checkout gsoc-uyuni-theme
+----
++
+
+. Create your own branch to work from:
++
+
+----
+git checkout -b gsoc-uyuni-theme-naman
+----
++
+
+. Navigate to `branding/supplemental-ui/uyuni/uyuni-webui/
+
+. Make the desired adjustments to any of the content here. __Depending on what you are working on you may need to modify parts of the default-ui. Contact me for this__
+
+
 
 
 
